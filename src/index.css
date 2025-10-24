@@ -1,14 +1,49 @@
 @import "tailwindcss";
 
 * {
-	margin: 0;
-	padding: 0;
 	box-sizing: border-box;
 }
 
 body {
 	scroll-behavior: smooth;
 	font-family: "Inter", sans-serif;
-  background-color:
-    pink;
+	background-color: #ffffffff;
+}
+
+/* ✅ Global Theme Tokens (Tailwind v4 way) */
+@theme {
+	--color-primary: #2C35E0FF;
+	--color-secondary: #878CEDFF;
+	--color-dark: #878CEDFF;
+	--color-light: #f8fafc;
+
+	--font-sans: "Inter", sans-serif;
+	--font-heading: "Poppins", sans-serif;
+}
+
+/* ✅ Reusable Component Classes */
+@layer components {
+	.section-container {
+		@apply max-w-7xl mx-auto px-6 py-16;
+	}
+
+	.heading-primary {
+		@apply text-4xl md:text-5xl font-bold tracking-tight text-gray-900;
+	}
+
+	.heading-secondary {
+		@apply text-3xl md:text-4xl font-semibold text-gray-800;
+	}
+
+	.paragraph {
+		@apply text-gray-600 text-base leading-relaxed;
+	}
+
+	.btn-primary {
+		@apply bg-[--color-primary] text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition;
+	}
+
+	.btn-outline {
+		@apply border border-gray-300 text-gray-800 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition;
+	}
 }
