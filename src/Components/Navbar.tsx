@@ -16,15 +16,15 @@ const Navbar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	return (
-		<nav className="sticky top-0 left-0 w-full z-30 px-6">
-			<div className="bg-white/20 backdrop-blur-xl shadow-lg border-b border-white/10 shadow-black/5">
-				<div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-8">
+		<nav className="fixed top-0 left-0 w-full z-30">
+			<div className="bg-white/50 backdrop-blur-2xl border-l border-white/20 shadow-lg shadow-black/5">
+				<div className="max-w-full mx-auto flex items-center justify-between py-2 px-8">
 					<div className="text-2xl font-bold">
 						<Link to="/">
 							<img
 								src={Logo}
 								alt="Logo"
-								className="h-16 object-cover object-top"
+								className="h-6 object-cover object-top"
 							/>
 						</Link>
 					</div>
@@ -65,7 +65,7 @@ const Navbar = () => {
 				<button
 					type="button"
 					aria-label="Close mobile menu"
-					className="fixed inset-0 h-full bg-black/30 z-40 md:hidden"
+					className="fixed inset-0 h-full bg-black/60 z-40 md:hidden"
 					onClick={() => setIsMenuOpen(false)}
 					onKeyDown={(e) => {
 						if (e.key === "Enter" || e.key === " ") {
@@ -78,22 +78,20 @@ const Navbar = () => {
 
 			{/* Mobile Menu */}
 			<div
-				className={`fixed top-0 right-0 flex h-full w-3/4 max-w-sm flex-col bg-white/50 backdrop-blur-2xl border-l border-white/20 shadow-lg transition-transform duration-300 ease-in-out md:hidden z-50 ${
+				className={`fixed top-0 right-0 flex h-full w-3/4  max-w-sm flex-col bg-white/80 backdrop-blur-3xl border-l border-white/20 shadow-lg transition-transform duration-300 ease-in-out md:hidden z-50 ${
 					isMenuOpen ? "translate-x-0" : "translate-x-full"
 				}`}>
-				{/* Close Button */}
-				{/* Adding a subtle border, inner shadow, and highlight */}
-				{/* bg-white/20 is changed to bg-blue-50/10 for a subtle tint */}
-
 				<div className="flex justify-end p-4">
 					<button
 						aria-label="Close Menu"
 						onClick={() => setIsMenuOpen(false)}>
-						<X size={28} />
+						<span className="cursor-pointer">
+							<X size={28} />
+						</span>
 					</button>
 				</div>
 				{/* Centered Content */}
-				<div className="flex flex-grow flex-col items-center justify-center px-6">
+				<div className="flex flex-grow flex-col items-center justify-self-start px-6 pt-5">
 					{/* Mobile Menu Items */}
 					<ul className="flex flex-col gap-4 text-center text-lg font-medium">
 						{navLinks.map((link) => (

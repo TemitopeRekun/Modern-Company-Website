@@ -6,14 +6,13 @@
 
 body {
 	scroll-behavior: smooth;
-	font-family: "Inter", sans-serif;
-	background-color: #ffffffff;
+	
 }
 
 /* ✅ Global Theme Tokens (Tailwind v4 way) */
 @theme {
 	--color-primary: #2C35E0FF;
-	--color-secondary: #878CEDFF;
+	--color-secondary: #878CEDFF; 
 	--color-dark: #878CEDFF;
 	--color-light: #f8fafc;
 
@@ -28,11 +27,11 @@ body {
 	}
 
 	.heading-primary {
-		@apply text-4xl md:text-5xl font-bold tracking-tight text-gray-900;
+		@apply text-4xl md:text-5xl font-bold tracking-tight text-white;
 	}
 
 	.heading-secondary {
-		@apply text-3xl md:text-4xl font-semibold text-gray-800;
+		@apply text-3xl md:text-4xl font-semibold text-gray-700;
 	}
 
 	.paragraph {
