@@ -9,30 +9,30 @@ import Float8 from "../../Assets/float8.png";
 
 const Hero = () => {
 	return (
-		<section className="section-container bg-[var(--color-secondary)] max-w-full min-h-screen text-center pt-50 px-4 md:flex md:justify-center md:items-space-between  relative overflow-hidden">
+		<section className="section-container bg-[var(--color-secondary)] max-w-full min-h-screen text-center pt-50 px-4 flex items-center md:items-start justify-center md:items-space-between relative overflow-hidden">
 			<div>
 				<img
 					src={Float5}
 					alt="floating"
-					className="hidden md:block absolute bottom-[10%] left-[35%] w-[10vw] h-auto"
+					className="absolute md:bottom-[7%] md:left-[35%] md:w-[10vw] h-auto left-[5%] w-[17vw] float"
 				/>
 				<img
 					src={Float6}
 					alt="floating"
-					className="hidden md:block absolute top-[34%] left-[18%] w-[18vw] h-auto"
+					className="hidden md:block absolute top-[34%] left-[18%] w-[18vw] h-auto float"
 				/>
 				<img
 					src={Float7}
 					alt="floating"
-					className="hidden md:block absolute bottom-[15%] left-[5%] w-[12vw] h-auto"
+					className="hidden md:block absolute bottom-[15%] left-[5%] w-[12vw] h-auto float"
 				/>
 				<img
 					src={Float8}
 					alt="floating"
-					className="absolute top-[18%] left-[5%] w-[9vw] h-auto"
+					className="absolute md:top-[18%] md:left-[5%] md:w-[9vw] h-auto top-[10%] left-[5%] w-[37vw] float"
 				/>
 			</div>
-			<div>
+			<div className="z-40">
 				<p className="paragraph text-white max-w-2xl mx-auto">
 					We are glad to have you here.
 				</p>
@@ -48,22 +48,22 @@ const Hero = () => {
 				<img
 					src={Float1}
 					alt="floating"
-					className="absolute top-[27%] right-[20%] w-[10vw] h-auto"
+					className="absolute md:top-[27%] md:right-[20%] md:w-[10vw] h-auto bottom-[10%] right-[10%] w-[22vw] float"
 				/>
 				<img
 					src={Float2}
 					alt=" float"
-					className="hidden md:block absolute bottom-[30%] right-[5%] w-[7vw] h-auto"
+					className="absolute md:bottom-[30%] md:right-[5%] md:w-[7vw] bottom-[65%] h-auto float"
 				/>
 				<img
 					src={Float3}
 					alt="float"
-					className="hidden md:block absolute bottom-[13%] right-[18%] w-[16vw] h-auto"
+					className="hidden md:block absolute bottom-[13%] right-[18%] w-[16vw] h-auto float"
 				/>
 				<img
 					src={Float4}
 					alt="float"
-					className="hidden md:block absolute bottom-[17%] right-[40%] w-[8vw] h-auto"
+					className="absolute md:bottom-[17%] right-[40%] md:w-[8vw] bottom-[5%] w-[13vw] h-auto float"
 				/>
 			</div>
 		</section>

@@ -5,6 +5,7 @@
 }
 
 body {
+	background-color: #FFFFFFFF;
 	scroll-behavior: smooth;
 	
 }
@@ -45,4 +46,16 @@ body {
 	.btn-outline {
 		@apply border border-gray-300 text-gray-800 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition;
 	}
+}
+
+
+/* Add this to your CSS file */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.float {
+    animation: float 6s ease-in-out infinite;
 }

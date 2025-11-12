@@ -1,6 +1,6 @@
 import Hero from "./Hero";
 
-const Home = () => {
+const Home: React.FC = () => {
 	return (
 		<main>
 			<Hero />
