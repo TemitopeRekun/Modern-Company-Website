@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../Components/Navbar";  
 import Footer from "../Components/Footer";
+import SharedBanner from "../Components/SharedBanner";
 
 const MainLayout = () => {
   return (
@@ -9,6 +10,7 @@ const MainLayout = () => {
       <main className="flex-grow">
         <Outlet />
       </main>
+      <SharedBanner />
       <Footer />
     </div>
   )
