@@ -10,6 +10,7 @@ const navLinks = [
 	{ label: "About Us", path: "/about-us" },
 	{ label: "Careers", path: "/careers" },
 	{ label: "Contact Us", path: "/contact-us" },
+	{ label: "FAQs", path: "/faq" },
 ];
 
 const Navbar = () => {

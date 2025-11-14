@@ -24,7 +24,7 @@ body {
 /* ✅ Reusable Component Classes */
 @layer components {
 	.section-container {
-		@apply max-w-7xl mx-auto px-6 py-16;
+		@apply max-w-7xl mx-auto px-8 py-16;
 	}
 
 	.heading-primary {
@@ -36,7 +36,7 @@ body {
 	}
 
 	.paragraph {
-		@apply text-gray-600 text-base leading-relaxed;
+		@apply text-[-#323743FF] text-base leading-relaxed;
 	}
 
 	.btn-primary {
