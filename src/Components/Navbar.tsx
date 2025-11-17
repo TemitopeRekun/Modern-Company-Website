@@ -2,16 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../assets/logo.png";
-
-const navLinks = [
-	{ label: "Features", path: "/features" },
-	{ label: "Pricing", path: "/pricing" },
-	{ label: "Help Center", path: "/help-center" },
-	{ label: "About Us", path: "/about-us" },
-	{ label: "Careers", path: "/careers" },
-	{ label: "Contact Us", path: "/contact-us" },
-	{ label: "FAQs", path: "/faq" },
-];
+import { navLinks } from "../Components/Data"
 
 const Navbar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -3,6 +3,7 @@ import HeroImg from "../../assets/HeroImg.png";
 import { FaTelegramPlane } from "react-icons/fa";
 import { IoWifi } from "react-icons/io5";
 import { MdShare } from "react-icons/md";
+import IntroBlock from "../../Components/IntroBlock";
 
 const AboutUsPreview = () => {
 	return (
@@ -13,10 +14,10 @@ const AboutUsPreview = () => {
 					alt="curved line"
 					className="absolute top-[18%] left-[-2%] hidden md:block"
 				/>
-				<p className="paragraph">
-					Lorem ipsum dolor sit amet, consectetur.
-				</p>
-				<h2 className="heading-secondary">About Us</h2>
+				<IntroBlock
+					paragraph="Lorem ipsum dolor sit amet, consectetur."
+					heading="About Us"
+				/>
 				<p className="paragraph mt-14 max-w-lg">
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic sit
 					eos perspiciatis ad amet necessitatibus, explicabo autem quaerat

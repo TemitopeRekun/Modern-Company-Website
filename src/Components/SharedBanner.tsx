@@ -2,7 +2,7 @@ import curve from "../assets/curve.png";
 
 const SharedBanner = () => {
 	return (
-		<section className="m-20">
+		<section className="py-8">
 			<div className="relative lg:max-w-7xl max-w-3xl mx-auto px-4 lg:px-8 py-8 lg:py-8 lg:mt-20 flex flex-col justify-center items-center bg-[#2C35E0FF] text-white text-center rounded-3xl">
 				<img
 					src={curve}
